@@ -43,4 +43,7 @@ app.UseEndpoints(endpoints =>
     endpoints.MapFallbackToController("Index", "Home");
 });
 
+app.MapGet("/", () => "Hello World!");
+app.MapGet("/test", () => "Test OK");
+
 app.Run();
