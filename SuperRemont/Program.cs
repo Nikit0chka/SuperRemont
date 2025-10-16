@@ -18,12 +18,6 @@ logger.LogInformation("Starting web host");
 
 var app = builder.Build();
 
-// Configure pipeline
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Error");
-    app.UseHsts();
-}
 
 app.UseHttpsRedirection();
 
@@ -39,7 +33,7 @@ app.UseEndpoints(endpoints =>
                                  name: "api",
                                  pattern: "api/{controller}/{action=Index}/{id?}");
 
-    // Fallback to React app for all other routes
+
     endpoints.MapFallbackToController("Index", "Home");
 });
 
