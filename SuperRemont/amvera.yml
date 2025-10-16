@@ -4,7 +4,7 @@ meta:
     name: dotnet
     version: 8.0
 build:
-  image: mcr.microsoft.com/dotnet/aspnet:8.0
+  image: mcr.microsoft.com/dotnet/sdk:8.0
 run:
   image: mcr.microsoft.com/dotnet/aspnet:8.0
   buildFileName: bin/SuperRemont
