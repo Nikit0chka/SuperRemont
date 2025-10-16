@@ -19,5 +19,5 @@ RUN dotnet publish "./SuperRemont.csproj" -c $BUILD_CONFIGURATION -o /app/publis
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENV ASPNETCORE_URLS="http://*:8080"
+ENV ASPNETCORE_URLS="http://*:80"
 ENTRYPOINT ["dotnet", "SuperRemont.dll"]
