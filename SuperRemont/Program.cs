@@ -1,7 +1,20 @@
+using Serilog;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services
 builder.Services.AddControllersWithViews();
+
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .Enrich.FromLogContext()
+    .CreateLogger();
+
+var loggerFactory = LoggerFactory.Create(static loggingBuilder => { loggingBuilder.AddSerilog(); });
+
+var logger = loggerFactory.CreateLogger<Program>();
+
+logger.LogInformation("Starting web host");
 
 var app = builder.Build();
 
@@ -25,7 +38,7 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllerRoute(
                                  name: "api",
                                  pattern: "api/{controller}/{action=Index}/{id?}");
-    
+
     // Fallback to React app for all other routes
     endpoints.MapFallbackToController("Index", "Home");
 });
