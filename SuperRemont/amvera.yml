@@ -6,8 +6,7 @@ meta:
 build:
   image: mcr.microsoft.com/dotnet/sdk:8.0
 run:
-  image: mcr.microsoft.com/dotnet/aspnet:8.0
-  buildFileName: bin/SuperRemont
+  image: mcr.microsoft.com/dotnet/sdk:8.0
+  buildFileName: bin/WebService
   persistenceMount: /data
   containerPort: 80
-  
