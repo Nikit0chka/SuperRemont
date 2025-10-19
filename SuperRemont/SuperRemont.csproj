@@ -18,11 +18,15 @@
       <_ContentIncludedByDefault Remove="wwwroot\js\site.js" />
       <_ContentIncludedByDefault Remove="wwwroot\assets\index-D63XEDEL.js" />
       <_ContentIncludedByDefault Remove="wwwroot\assets\index-DJ-2Q0hJ.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\1.mWomJba4NYMQjPeGGHfnHk2EN4WYhLeLUIE3gZaMPYmQ-DgFG7D-_.webp" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\index-CRYdFfOP.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\index-PB6KPvKr.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\Снимок экрана 2025-10-12 022237-DHAsV5-A.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\Снимок экрана 2025-10-12 022859-DW2SSUT-.png" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="Models\" />
-      <Folder Include="wwwroot\" />
     </ItemGroup>
 
     <ItemGroup>
