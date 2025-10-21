@@ -9,7 +9,7 @@ public class RequestController:Controller
 {
     private const string BotToken = "8499124710:AAETNeIzruS8EFmEm_aPH4t_lxt3MlsuOvc";
     private const string TelegramUrl = $"https://api.telegram.org/bot{BotToken}/sendMessage";
-    private const string ChatId = "888502263";
+    private const string ChatId = "8218373046";
 
     [HttpPost]
     public async Task<IActionResult> Create(CreateRequest request)
@@ -32,19 +32,6 @@ public class RequestController:Controller
 
         return Ok(responseContent);
     }
-
-    // // Добавьте этот метод для получения chat_id
-    // [HttpGet("getupdates")]
-    // public async Task<IActionResult> GetUpdates()
-    // {
-    //     using var httpClient = new HttpClient();
-    //     string url = $"https://api.telegram.org/bot{BotToken}/getUpdates";
-    //
-    //     var response = await httpClient.GetAsync(url);
-    //     var content = await response.Content.ReadAsStringAsync();
-    //
-    //     return Ok(content);
-    // }
 }
 
 public readonly record struct CreateRequest(string Name, string Phone);
