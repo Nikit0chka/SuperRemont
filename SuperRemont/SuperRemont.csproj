@@ -24,6 +24,8 @@
       <_ContentIncludedByDefault Remove="wwwroot\assets\Снимок экрана 2025-10-12 022237-DHAsV5-A.png" />
       <_ContentIncludedByDefault Remove="wwwroot\assets\Снимок экрана 2025-10-12 022859-DW2SSUT-.png" />
       <_ContentIncludedByDefault Remove="wwwroot\assets\index-BkPgnsEN.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\index-BpWXLalu.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\assets\index-CrHoPkjV.js" />
     </ItemGroup>
 
     <ItemGroup>
